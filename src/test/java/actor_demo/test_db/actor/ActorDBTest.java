@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
-@ActiveProfiles()
+@ActiveProfiles("wat")
 public class ActorDBTest {
     @Autowired
     private ActorRepository actorRepository;

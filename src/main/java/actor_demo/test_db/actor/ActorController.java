@@ -43,4 +43,5 @@ public class ActorController {
         actorService.deleteActor(id);
         return ResponseEntity.ok("Actor deleted successfully!");
     }
+
 }

@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -21,5 +23,11 @@ public class ActorDBTest {
 
         assertNotNull(foundEntity);
         assertEquals(actorEntity.getName(), foundEntity.getName());
+    }
+
+    @Test
+    public void testHowManyRows(){
+        List<ActorEntity> actorEntityList = actorRepository.findAll();
+        assertEquals(7, actorEntityList.size());
     }
 }

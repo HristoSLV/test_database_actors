@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
-@ActiveProfiles({"testsql"})
+//@ActiveProfiles({"testsql"})
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 //@Testcontainers
 public class ActorDBTest {
